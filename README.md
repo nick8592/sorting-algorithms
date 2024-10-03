@@ -119,7 +119,3 @@ Efficient for large datasets of numbers, especially when the range of digits is 
 ## Conclusion
 
 Each of these sorting algorithms has its own strengths and weaknesses. Choosing the right one depends on the size and nature of the data, as well as the constraints of the application. Some algorithms, like Quick Sort, are efficient for general-purpose use, while others, like Radix Sort, are tailored for specific types of data.
-
----
-
-This README provides a basic overview of each sorting algorithm. Feel free to explore the code implementations and run tests on different datasets to see how they perform in various scenarios.
