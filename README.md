@@ -8,6 +8,7 @@ This repository provides implementations of several fundamental sorting algorith
 Bubble Sort is one of the simplest sorting algorithms that repeatedly steps through the list, compares adjacent elements, and swaps them if they are in the wrong order. The process repeats until the list is sorted.
 
 **Time Complexity**:
+
 - Best: O(n) (when already sorted)
 - Average: O(n²)
 - Worst: O(n²)
@@ -23,6 +24,7 @@ Best for small data sets or when the list is almost sorted.
 Selection Sort divides the list into a sorted and an unsorted section. It repeatedly selects the smallest (or largest, depending on the order) element from the unsorted section and moves it to the sorted section.
 
 **Time Complexity**:
+
 - Best: O(n²)
 - Average: O(n²)
 - Worst: O(n²)
@@ -38,6 +40,7 @@ Simple and effective for small lists but not suitable for large datasets due to 
 Insertion Sort builds the final sorted array one item at a time. It is much less efficient on large lists but performs well on smaller lists or when data is nearly sorted.
 
 **Time Complexity**:
+
 - Best: O(n) (when nearly sorted)
 - Average: O(n²)
 - Worst: O(n²)
@@ -53,6 +56,7 @@ Ideal for small datasets or lists that are already partially sorted.
 Quick Sort is a highly efficient, divide-and-conquer algorithm. It works by selecting a 'pivot' element from the array and partitioning the other elements into two sub-arrays according to whether they are less than or greater than the pivot. The sub-arrays are then sorted recursively.
 
 **Time Complexity**:
+
 - Best: O(n log n)
 - Average: O(n log n)
 - Worst: O(n²) (when the pivot is poorly chosen)
@@ -62,27 +66,13 @@ Quick Sort is a highly efficient, divide-and-conquer algorithm. It works by sele
 **Use Case**:  
 Works well with large datasets, but its performance depends on the pivot selection. With optimizations, it’s among the fastest sorting algorithms.
 
-## 5. Heap Sort
+## 5. Merge Sort
 
 **Description**:  
-Heap Sort is a comparison-based sorting algorithm that uses a binary heap data structure. It begins by building a max-heap (or min-heap), then repeatedly extracts the largest element and reconstructs the heap.
+Merge Sort is another divide-and-conquer algorithm that splits the array into smaller subarrays, sorts each subarray, and then merges them back together in sorted order.
 
 **Time Complexity**:
-- Best: O(n log n)
-- Average: O(n log n)
-- Worst: O(n log n)
 
-**Space Complexity**: O(1)
-
-**Use Case**:  
-Heap Sort is efficient for large datasets and is particularly useful when you need a stable O(n log n) performance.
-
-## 6. Merge Sort
-
-**Description**:  
-Merge Sort is another divide-and-conquer algorithm that splits the array into smaller subarrays, sorts each subarray, and then merges them back together in sorted order. 
-
-**Time Complexity**:
 - Best: O(n log n)
 - Average: O(n log n)
 - Worst: O(n log n)
@@ -92,12 +82,29 @@ Merge Sort is another divide-and-conquer algorithm that splits the array into sm
 **Use Case**:  
 Stable, consistent performance, and particularly good for large datasets or when stability is a concern.
 
+## 6. Heap Sort
+
+**Description**:  
+Heap Sort is a comparison-based sorting algorithm that uses a binary heap data structure. It begins by building a max-heap (or min-heap), then repeatedly extracts the largest element and reconstructs the heap.
+
+**Time Complexity**:
+
+- Best: O(n log n)
+- Average: O(n log n)
+- Worst: O(n log n)
+
+**Space Complexity**: O(1)
+
+**Use Case**:  
+Heap Sort is efficient for large datasets and is particularly useful when you need a stable O(n log n) performance.
+
 ## 7. Radix Sort
 
 **Description**:  
 Radix Sort is a non-comparative integer sorting algorithm. It sorts numbers by processing individual digits. The sorting starts from the least significant digit and moves towards the most significant digit using a stable sort like Counting Sort.
 
 **Time Complexity**:
+
 - Best: O(nk) (where `k` is the number of digits in the largest number)
 - Average: O(nk)
 - Worst: O(nk)
@@ -116,4 +123,3 @@ Each of these sorting algorithms has its own strengths and weaknesses. Choosing 
 ---
 
 This README provides a basic overview of each sorting algorithm. Feel free to explore the code implementations and run tests on different datasets to see how they perform in various scenarios.
-
