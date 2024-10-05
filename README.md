@@ -1,6 +1,6 @@
 # Sorting Algorithms
 
-This repository provides implementations of 7 sorting algorithms, widely used in computer science for ordering data. These algorithms differ in terms of complexity, efficiency, and use cases. Below is an introduction to each of them.
+This repository provides implementations of several sorting algorithms, widely used in computer science for ordering data. These algorithms differ in terms of complexity, efficiency, and use cases. Below is an introduction to each of them.
 
 ## 1. Bubble Sort
 
